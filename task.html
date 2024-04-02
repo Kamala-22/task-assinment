@@ -1,0 +1,90 @@
+
+     <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+         /* form{
+            border: 2px solid black;
+            width: 30%;
+            height: 90vh;
+            padding: 10px;
+        } */
+        #btn{
+            background: rgb(0, 128, 0);
+            margin-left: 140px;
+            height:30px ;
+            width: 120px;
+            color: white;
+
+        }
+        .Submit{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        span{
+            position: relative;
+            top: 20px;
+            right: 170px;
+        }
+         body{
+            /* display: flex; */
+            justify-content: center;
+            align-items: center;
+            /* height: ; */
+            width:30% ;
+            margin: auto;
+            border: 2px solid black;
+            padding: 10px;
+            /* overflow: hidden; */
+            /* border-right: 15; */
+
+        } 
+     </style>
+</head>
+<body>
+    <div>
+    <h1>Task Assignment form</h1><hr>
+    <form action="assignment.html">
+    
+            <label for="firstName">Employee Name:</label><br><br>
+            <input type="text" name="firstName" id="first"> <span >firstName</span>
+            <input type="text" name="lastName" id="last"> <span >LastName</span><br><br><br><br>
+            
+            <label for="managerName">Manager Name:</label><br><br>
+            <input type="text" name="manager" id="manager">  <span >firstName</span>
+            <input type="text" name="managerName" id="managerName"> <span >LastName</span><br><br><br><br>
+            
+            <label for="taskName">Task:</label><label for="taskName" style="margin-left:40%">Task ID</label><br><br>
+            <input type="text" name="task" id="task"> 
+
+            <input type="text" name="taskid" id="taskid" placeholder="ex:3" style="margin-left:11%"><br><br><br><br>
+            
+            <label>Status</label><br><br>
+            <input type="radio" name="status" value="Not Started">Not Started<br>
+            <input type="radio" name="status" value="In Progress">In Progress<br>
+            <input type="radio" name="status" value="Done">Done<br>
+            <input type="radio" name="status" value="Awaiting Feedback">Awaiting Feedback<br><br>
+            
+            <label>Additional Notes:</label><br><br>
+            <textarea placeholder="Type here....." id="additionalNotes" style="height: 70px; width: 400px;"></textarea> <br><br>
+            
+            <label>Instructions</label><br><br>
+            <textarea id="instructions" style="height: 50px; width: 400px;"></textarea> <br><br>
+        <button id="btn">Submit</button>
+    </form>
+    
+    
+    
+    
+
+
+
+</body>
+<script src="task.js" ></script>
+    
+</html>
